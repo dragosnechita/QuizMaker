@@ -7,4 +7,4 @@ def index(request):
         quiz = ApiClient.get_quiz_options()
         return render(request, 'index.html', quiz)
     except ValueError:
-        return request, 'error.html'
+        return render(request, 'error.html')

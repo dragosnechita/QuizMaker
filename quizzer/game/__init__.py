@@ -62,8 +62,3 @@ class Quiz:
             'correct_answers': self.number_of_correct_answers,
             'all_questions': self.number_of_questions
         }
-
-
-
-    @classmethod
-    def restore(cls, request):
