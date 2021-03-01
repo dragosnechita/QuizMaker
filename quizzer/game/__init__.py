@@ -39,7 +39,7 @@ class Quiz:
         return Quiz(number_of_questions, difficulty, questions, 0, 0)
 
     def save(self, request):
-        request.session['saved_quiz']
+        request.session['saved_quiz'] = self
 
     def stop(self, request):
         del request.session['saved_quiz']
